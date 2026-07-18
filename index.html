@@ -49,6 +49,7 @@
     nav#archive h2{width:100%;}
   }
 </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 <body>
 <header>
@@ -71,6 +72,34 @@
     <section class="briefing" id="2026-07-18">
       <div class="date-banner">
         <h2>Saturday, July 18, 2026</h2>
+<div class="infographic-container" style="background:#0f172a;border-radius:12px;padding:24px;margin:24px 0;">
+  <h3 style="color:#e2e8f0;font-family:Georgia,serif;margin-top:0;">Daily Intelligence Snapshot &mdash; July 18, 2026</h3>
+  <p style="color:#94a3b8;font-size:0.9em;">Story significance scores across today's five leading stories (editorial weighting, 0&ndash;100).</p>
+  <div style="position:relative;height:340px;"><canvas id="chart-2026-07-18"></canvas></div>
+</div>
+<script>
+new Chart(document.getElementById('chart-2026-07-18'), {
+  type: 'bar',
+  data: {
+    labels: ['Pentagon–SpaceX AI Pact', "Trump's November Plan", 'Microplastics in Human Blood', 'Toad-Poison Biohacking', 'Costco Retail Surge'],
+    datasets: [
+      { label: 'Significance', data: [92, 88, 84, 71, 65],
+        backgroundColor: ['#38bdf8','#f87171','#34d399','#fbbf24','#a78bfa'], borderRadius: 6 },
+      { label: 'Reader Relevance', data: [85, 74, 90, 78, 70],
+        backgroundColor: 'rgba(226,232,240,0.25)', borderRadius: 6 }
+    ]
+  },
+  options: {
+    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+    scales: {
+      x: { max: 100, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(148,163,184,0.15)' } },
+      y: { ticks: { color: '#e2e8f0', font: { size: 12 } }, grid: { display: false } }
+    },
+    plugins: { legend: { labels: { color: '#cbd5e1' } } }
+  }
+});
+</script>
+
         <span class="edition-tag">AM Edition</span>
       </div>
       <div class="exec-summary">
