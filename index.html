@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Intelligence Briefing — Timothy Escamilla</title>
+<style>
+  :root{
+    --bg:#0f1419; --panel:#1a2129; --panel2:#212a34; --accent:#d4a017; --accent2:#3d8bfd;
+    --text:#e8e6e3; --muted:#9aa5b1; --border:#2c3743; --green:#3fb26f; --red:#e0564f;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:Georgia,'Times New Roman',serif; background:var(--bg); color:var(--text); line-height:1.6;}
+  header{background:linear-gradient(135deg,#141b22,#1d2733); border-bottom:3px solid var(--accent); padding:28px 32px; position:sticky; top:0; z-index:10;}
+  header h1{font-size:1.6rem; letter-spacing:.5px;}
+  header .sub{color:var(--muted); font-size:.9rem; font-family:Arial,sans-serif; margin-top:4px;}
+  .layout{display:flex; max-width:1200px; margin:0 auto;}
+  nav#archive{width:220px; flex-shrink:0; padding:24px 16px; border-right:1px solid var(--border); position:sticky; top:96px; align-self:flex-start; max-height:calc(100vh - 96px); overflow-y:auto;}
+  nav#archive h2{font-size:.8rem; text-transform:uppercase; letter-spacing:2px; color:var(--muted); font-family:Arial,sans-serif; margin-bottom:12px;}
+  nav#archive a{display:block; padding:8px 12px; margin-bottom:4px; border-radius:6px; color:var(--text); text-decoration:none; font-family:Arial,sans-serif; font-size:.9rem;}
+  nav#archive a:hover{background:var(--panel2);}
+  nav#archive a.active{background:var(--accent); color:#101418; font-weight:bold;}
+  main{flex:1; padding:32px; min-width:0;}
+  section.briefing{display:none;}
+  section.briefing.visible{display:block; animation:fade .3s ease;}
+  @keyframes fade{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:none;}}
+  .date-banner{display:flex; align-items:baseline; gap:14px; margin-bottom:6px;}
+  .date-banner h2{font-size:1.5rem; color:var(--accent);}
+  .edition-tag{font-family:Arial,sans-serif; font-size:.7rem; letter-spacing:2px; text-transform:uppercase; background:var(--panel2); border:1px solid var(--border); padding:3px 10px; border-radius:20px; color:var(--muted);}
+  .exec-summary{background:var(--panel); border-left:4px solid var(--accent); border-radius:0 8px 8px 0; padding:18px 22px; margin:18px 0 28px; font-style:italic; color:#d6d2cc;}
+  article.story{background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:22px 26px; margin-bottom:22px;}
+  article.story h3{font-size:1.15rem; margin-bottom:4px;}
+  article.story .meta{font-family:Arial,sans-serif; font-size:.78rem; color:var(--muted); margin-bottom:12px;}
+  article.story .meta .src{color:var(--accent2);}
+  article.story p{margin-bottom:10px;}
+  .why{background:var(--panel2); border-radius:8px; padding:12px 16px; margin-top:12px; font-size:.95rem;}
+  .why b{color:var(--accent);}
+  .radar{background:var(--panel); border:1px dashed var(--border); border-radius:10px; padding:18px 24px; margin-top:26px;}
+  .radar h3{font-size:1rem; color:var(--muted); text-transform:uppercase; letter-spacing:2px; font-family:Arial,sans-serif; margin-bottom:10px;}
+  .radar ul{list-style:none;}
+  .radar li{padding:6px 0; border-bottom:1px solid var(--border);}
+  .radar li:last-child{border-bottom:none;}
+  .infographic{margin:24px 0; text-align:center;}
+  .infographic img{max-width:100%; border-radius:10px; border:1px solid var(--border);}
+  footer{max-width:1200px; margin:0 auto; padding:20px 32px; color:var(--muted); font-family:Arial,sans-serif; font-size:.78rem; border-top:1px solid var(--border);}
+  @media(max-width:800px){
+    .layout{flex-direction:column;}
+    nav#archive{width:100%; position:static; max-height:none; display:flex; flex-wrap:wrap; gap:6px; border-right:none; border-bottom:1px solid var(--border);}
+    nav#archive h2{width:100%;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>☕ Daily Intelligence Briefing</h1>
+  <div class="sub">Prepared for Timothy Escamilla · AM Edition · Updated daily at 6:25 AM Pacific</div>
+</header>
+
+<div class="layout">
+  <nav id="archive">
+    <h2>Archive</h2>
+    <!-- ARCHIVE:INSERT -->
+    <a href="#2026-07-18" data-date="2026-07-18">Jul 18, 2026</a>
+    <a href="#2026-07-17" data-date="2026-07-17">Jul 17, 2026</a>
+  </nav>
+
+  <main>
+    <!-- BRIEFING:INSERT -->
+
+    <!-- ===== BRIEFING 2026-07-18 ===== -->
+    <section class="briefing" id="2026-07-18">
+      <div class="date-banner">
+        <h2>Saturday, July 18, 2026</h2>
+        <span class="edition-tag">AM Edition</span>
+      </div>
+      <div class="exec-summary">
+        <b>Executive Summary (sample):</b> This is a sample entry demonstrating the daily format. Each morning the briefing task will insert a new section here — executive summary, 3–5 deep-dive stories from your inbox and subscriptions, the infographic, and the radar list.
+      </div>
+      <div class="infographic">
+        <img src="https://cdn.simtheory.ai/image/upload/v1779149035/user_16744/china-economy-ai_b1c9db52.png" alt="Daily infographic">
+      </div>
+      <article class="story">
+        <h3>Sample Story: AI Has Broken Containment</h3>
+        <div class="meta"><span class="src">The Atlantic</span> · Inbox-sourced · Deep dive</div>
+        <p>Story summary paragraph goes here — the same depth and analysis the email briefings carried, now living on the page permanently.</p>
+        <div class="why"><b>Why it matters to you:</b> Relevance to Bolthouse Fresh Foods, M&amp;A landscape, or your AI-deployment agenda goes here.</div>
+      </article>
+      <div class="radar">
+        <h3>Also on the Radar</h3>
+        <ul>
+          <li>Radar item one — quick hit with source.</li>
+          <li>Radar item two — quick hit with source.</li>
+          <li>Radar item three — quick hit with source.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== BRIEFING 2026-07-17 ===== -->
+    <section class="briefing" id="2026-07-17">
+      <div class="date-banner">
+        <h2>Friday, July 17, 2026</h2>
+        <span class="edition-tag">AM Edition</span>
+      </div>
+      <div class="exec-summary">
+        <b>Executive Summary (sample archive entry):</b> This second entry shows how history works — click any date in the Archive to instantly jump back. Nothing is ever deleted; the page grows one section per day.
+      </div>
+      <article class="story">
+        <h3>Sample Archived Story</h3>
+        <div class="meta"><span class="src">WSJ</span> · Inbox-sourced</div>
+        <p>Older briefings remain fully intact and searchable with Ctrl+F across the whole page.</p>
+      </article>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Generated by Kaffer · Source of truth: /home/timothy/shared/Daily News Update/Daily Briefing.html · History preserved indefinitely
+</footer>
+
+<script>
+  const sections = document.querySelectorAll('section.briefing');
+  const links = document.querySelectorAll('#archive a');
+  function show(date){
+    sections.forEach(s => s.classList.toggle('visible', s.id === date));
+    links.forEach(a => a.classList.toggle('active', a.dataset.date === date));
+    if(history.replaceState) history.replaceState(null,'','#'+date);
+  }
+  links.forEach(a => a.addEventListener('click', e => { e.preventDefault(); show(a.dataset.date); }));
+  // Show entry from URL hash, else newest (first link)
+  const initial = location.hash ? location.hash.slice(1) : (links[0] ? links[0].dataset.date : null);
+  if(initial) show(initial);
+</script>
+</body>
+</html>
